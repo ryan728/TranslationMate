@@ -1,0 +1,450 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		493931A71510195E00312917 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 493931A61510195E00312917 /* Cocoa.framework */; };
+		493931B11510195E00312917 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 493931AF1510195E00312917 /* InfoPlist.strings */; };
+		493931B31510195E00312917 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 493931B21510195E00312917 /* main.m */; };
+		493931B71510195E00312917 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 493931B51510195E00312917 /* Credits.rtf */; };
+		493931BA1510195E00312917 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 493931B91510195E00312917 /* AppDelegate.m */; };
+		493931BD1510195F00312917 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 493931BB1510195F00312917 /* MainMenu.xib */; };
+		493931C51510195F00312917 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 493931C41510195F00312917 /* SenTestingKit.framework */; };
+		493931C61510195F00312917 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 493931A61510195E00312917 /* Cocoa.framework */; };
+		493931CE1510195F00312917 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 493931CC1510195F00312917 /* InfoPlist.strings */; };
+		493931D11510195F00312917 /* TranslationMateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 493931D01510195F00312917 /* TranslationMateTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		493931C71510195F00312917 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 493931991510195E00312917 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 493931A11510195E00312917;
+			remoteInfo = TranslationMate;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		493931A21510195E00312917 /* TranslationMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TranslationMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		493931A61510195E00312917 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		493931A91510195E00312917 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		493931AA1510195E00312917 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		493931AB1510195E00312917 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		493931AE1510195E00312917 /* TranslationMate-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TranslationMate-Info.plist"; sourceTree = "<group>"; };
+		493931B01510195E00312917 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		493931B21510195E00312917 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		493931B41510195E00312917 /* TranslationMate-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TranslationMate-Prefix.pch"; sourceTree = "<group>"; };
+		493931B61510195E00312917 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		493931B81510195E00312917 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		493931B91510195E00312917 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		493931BC1510195F00312917 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		493931C31510195F00312917 /* TranslationMateTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TranslationMateTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		493931C41510195F00312917 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		493931CB1510195F00312917 /* TranslationMateTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TranslationMateTests-Info.plist"; sourceTree = "<group>"; };
+		493931CD1510195F00312917 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		493931CF1510195F00312917 /* TranslationMateTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TranslationMateTests.h; sourceTree = "<group>"; };
+		493931D01510195F00312917 /* TranslationMateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TranslationMateTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4939319F1510195E00312917 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				493931A71510195E00312917 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		493931BF1510195F00312917 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				493931C51510195F00312917 /* SenTestingKit.framework in Frameworks */,
+				493931C61510195F00312917 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		493931971510195E00312917 = {
+			isa = PBXGroup;
+			children = (
+				493931AC1510195E00312917 /* TranslationMate */,
+				493931C91510195F00312917 /* TranslationMateTests */,
+				493931A51510195E00312917 /* Frameworks */,
+				493931A31510195E00312917 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		493931A31510195E00312917 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				493931A21510195E00312917 /* TranslationMate.app */,
+				493931C31510195F00312917 /* TranslationMateTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		493931A51510195E00312917 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				493931A61510195E00312917 /* Cocoa.framework */,
+				493931C41510195F00312917 /* SenTestingKit.framework */,
+				493931A81510195E00312917 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		493931A81510195E00312917 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				493931A91510195E00312917 /* AppKit.framework */,
+				493931AA1510195E00312917 /* CoreData.framework */,
+				493931AB1510195E00312917 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		493931AC1510195E00312917 /* TranslationMate */ = {
+			isa = PBXGroup;
+			children = (
+				493931B81510195E00312917 /* AppDelegate.h */,
+				493931B91510195E00312917 /* AppDelegate.m */,
+				493931BB1510195F00312917 /* MainMenu.xib */,
+				493931AD1510195E00312917 /* Supporting Files */,
+			);
+			path = TranslationMate;
+			sourceTree = "<group>";
+		};
+		493931AD1510195E00312917 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				493931AE1510195E00312917 /* TranslationMate-Info.plist */,
+				493931AF1510195E00312917 /* InfoPlist.strings */,
+				493931B21510195E00312917 /* main.m */,
+				493931B41510195E00312917 /* TranslationMate-Prefix.pch */,
+				493931B51510195E00312917 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		493931C91510195F00312917 /* TranslationMateTests */ = {
+			isa = PBXGroup;
+			children = (
+				493931CF1510195F00312917 /* TranslationMateTests.h */,
+				493931D01510195F00312917 /* TranslationMateTests.m */,
+				493931CA1510195F00312917 /* Supporting Files */,
+			);
+			path = TranslationMateTests;
+			sourceTree = "<group>";
+		};
+		493931CA1510195F00312917 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				493931CB1510195F00312917 /* TranslationMateTests-Info.plist */,
+				493931CC1510195F00312917 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		493931A11510195E00312917 /* TranslationMate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 493931D41510195F00312917 /* Build configuration list for PBXNativeTarget "TranslationMate" */;
+			buildPhases = (
+				4939319E1510195E00312917 /* Sources */,
+				4939319F1510195E00312917 /* Frameworks */,
+				493931A01510195E00312917 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TranslationMate;
+			productName = TranslationMate;
+			productReference = 493931A21510195E00312917 /* TranslationMate.app */;
+			productType = "com.apple.product-type.application";
+		};
+		493931C21510195F00312917 /* TranslationMateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 493931D71510195F00312917 /* Build configuration list for PBXNativeTarget "TranslationMateTests" */;
+			buildPhases = (
+				493931BE1510195F00312917 /* Sources */,
+				493931BF1510195F00312917 /* Frameworks */,
+				493931C01510195F00312917 /* Resources */,
+				493931C11510195F00312917 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				493931C81510195F00312917 /* PBXTargetDependency */,
+			);
+			name = TranslationMateTests;
+			productName = TranslationMateTests;
+			productReference = 493931C31510195F00312917 /* TranslationMateTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		493931991510195E00312917 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 4939319C1510195E00312917 /* Build configuration list for PBXProject "TranslationMate" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 493931971510195E00312917;
+			productRefGroup = 493931A31510195E00312917 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				493931A11510195E00312917 /* TranslationMate */,
+				493931C21510195F00312917 /* TranslationMateTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		493931A01510195E00312917 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				493931B11510195E00312917 /* InfoPlist.strings in Resources */,
+				493931B71510195E00312917 /* Credits.rtf in Resources */,
+				493931BD1510195F00312917 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		493931C01510195F00312917 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				493931CE1510195F00312917 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		493931C11510195F00312917 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4939319E1510195E00312917 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				493931B31510195E00312917 /* main.m in Sources */,
+				493931BA1510195E00312917 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		493931BE1510195F00312917 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				493931D11510195F00312917 /* TranslationMateTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		493931C81510195F00312917 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 493931A11510195E00312917 /* TranslationMate */;
+			targetProxy = 493931C71510195F00312917 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		493931AF1510195E00312917 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				493931B01510195E00312917 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		493931B51510195E00312917 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				493931B61510195E00312917 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		493931BB1510195F00312917 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				493931BC1510195F00312917 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		493931CC1510195F00312917 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				493931CD1510195F00312917 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		493931D21510195F00312917 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		493931D31510195F00312917 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		493931D51510195F00312917 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TranslationMate/TranslationMate-Prefix.pch";
+				INFOPLIST_FILE = "TranslationMate/TranslationMate-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		493931D61510195F00312917 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TranslationMate/TranslationMate-Prefix.pch";
+				INFOPLIST_FILE = "TranslationMate/TranslationMate-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		493931D81510195F00312917 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TranslationMate.app/Contents/MacOS/TranslationMate";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TranslationMate/TranslationMate-Prefix.pch";
+				INFOPLIST_FILE = "TranslationMateTests/TranslationMateTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		493931D91510195F00312917 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TranslationMate.app/Contents/MacOS/TranslationMate";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TranslationMate/TranslationMate-Prefix.pch";
+				INFOPLIST_FILE = "TranslationMateTests/TranslationMateTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4939319C1510195E00312917 /* Build configuration list for PBXProject "TranslationMate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				493931D21510195F00312917 /* Debug */,
+				493931D31510195F00312917 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		493931D41510195F00312917 /* Build configuration list for PBXNativeTarget "TranslationMate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				493931D51510195F00312917 /* Debug */,
+				493931D61510195F00312917 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		493931D71510195F00312917 /* Build configuration list for PBXNativeTarget "TranslationMateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				493931D81510195F00312917 /* Debug */,
+				493931D91510195F00312917 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 493931991510195E00312917 /* Project object */;
+}
