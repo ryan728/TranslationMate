@@ -1,0 +1,17 @@
+<paper status="dev" xmlns:dk="http://www.kirsanov.com">
+  <title>实现内部DSL</title>
+  <version date="2007-09-03">First Draft</version>
+<version date="2008-04-08 09:20 EDT">Added early section on
+command-query vs fluent interfaces</version>
+  <abstract></abstract>
+<contents/>
+<body>
+<indexterm zone="" significance="preferred"><primary>内部DSL</primary></indexterm>
+  <p>现在，我已经讨论了一些实现DSL的普遍问题，是时候探讨实现特定DSL了。我<dk:nobr>决定</dk:nobr>从内部DSL开始，因为它们通常是最可达到的DSL形式。与外部DSL不同>，你不需要学习语法和语言解析，而且与语言工作台不同，你也不需要任何特殊工具。借助于内部DSL，你在你习惯的语言环境中工作。其结果就是，在过去数年中，人们对内部DSL表现出极大的兴趣就不出意外来了。
+  </p>
+  <p>当使用内部DSL时，你会受到宿主语言的极大限制。因为你使用的任何表达式都必须是<dk:nobr>宿主语言</dk:nobr>的合法表达式，内部DSL用法的很多想法都依赖于宿主语言的特性。内部DSL最近背后的推动力大部分来自于Ruby社区，Ruby语言拥有很多特性，助长了DSL。然而，Ruby的很多技巧也可以用在其他语言之中，虽然往往没有那么优雅。内部DSL的思想源于Lisp，世界上最古老的计算机语言之一，它拥有有限却适当大小的特性来完成这项工作。
+<indexterm><primary>Ruby</primary></indexterm>
+<indexterm><primary>Lisp</primary></indexterm>
+</p>
+</body>
+</paper>
