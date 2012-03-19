@@ -1,0 +1,24 @@
+- open xml file
+- modify xml file
+- save xml file back
+
+- polish typography, very basic version
+
+- open en, zh two xml files at the same time
+- horizontally (maybe you want vertically first?) show two views
+- could save zh xml
+
+- synchronized scroll document views
+
+- drag & drop files in handling
+
+- support vertical views
+- support horizontal 3 views on big screen
+
+- highlight the modifying view (based on git diff?)
+
+- a more focused fullscreen mode
+
+- autosave (should be easy)
+
+- undo/redo (maybe cheap)
