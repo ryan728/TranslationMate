@@ -1,5 +1,5 @@
 //
-//  main.m
+//  Document.h
 //  TranslationMate
 //
 //  Created by Long Sun on 3/19/12.
@@ -8,7 +8,6 @@
 
 #import <Cocoa/Cocoa.h>
 
-int main(int argc, char *argv[])
-{
-  return NSApplicationMain(argc, (const char **)argv);
-}
+@interface Document : NSDocument
+
+@end

@@ -2,8 +2,8 @@
 //  TranslationMateTests.m
 //  TranslationMateTests
 //
-//  Created by Lei Zhang on 3/14/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Created by Long Sun on 3/19/12.
+//  Copyright (c) 2012 ThoughtWorks. All rights reserved.
 //
 
 #import "TranslationMateTests.h"

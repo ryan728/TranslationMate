@@ -21,3 +21,6 @@ build/
 
 # AppCode
 .idea/
+
+# Project
+tmp/
