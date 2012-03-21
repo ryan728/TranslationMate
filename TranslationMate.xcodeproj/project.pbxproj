@@ -13,8 +13,8 @@
 		A358CA681517B2C20039B4DE /* Document.m in Sources */ = {isa = PBXBuildFile; fileRef = A358CA5B1517B2C20039B4DE /* Document.m */; };
 		A358CA691517B2C20039B4DE /* Document.m in Sources */ = {isa = PBXBuildFile; fileRef = A358CA5B1517B2C20039B4DE /* Document.m */; };
 		A358CA6A1517B2C20039B4DE /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = A358CA5C1517B2C20039B4DE /* Credits.rtf */; };
-		A358CA6C1517B2C20039B4DE /* Document.xib in Resources */ = {isa = PBXBuildFile; fileRef = A358CA5E1517B2C20039B4DE /* Document.xib */; };
-		A358CA6D1517B2C20039B4DE /* Document.xib in Resources */ = {isa = PBXBuildFile; fileRef = A358CA5E1517B2C20039B4DE /* Document.xib */; };
+		A358CA6C1517B2C20039B4DE /* WindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A358CA5E1517B2C20039B4DE /* WindowController.xib */; };
+		A358CA6D1517B2C20039B4DE /* WindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A358CA5E1517B2C20039B4DE /* WindowController.xib */; };
 		A358CA6E1517B2C20039B4DE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A358CA601517B2C20039B4DE /* InfoPlist.strings */; };
 		A358CA701517B2C20039B4DE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A358CA621517B2C20039B4DE /* MainMenu.xib */; };
 		A358CA711517B2C20039B4DE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A358CA621517B2C20039B4DE /* MainMenu.xib */; };
@@ -25,6 +25,8 @@
 		A358CA7B1517B2E80039B4DE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A358CA771517B2E80039B4DE /* InfoPlist.strings */; };
 		A358CA7C1517B2E80039B4DE /* TranslationMateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A358CA7A1517B2E80039B4DE /* TranslationMateTests.m */; };
 		A358CA921517B65A0039B4DE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A358CA601517B2C20039B4DE /* InfoPlist.strings */; };
+		A358CABB1517E5090039B4DE /* NSArray+Access.m in Sources */ = {isa = PBXBuildFile; fileRef = A358CABA1517E5090039B4DE /* NSArray+Access.m */; };
+		A358CABC1517E5090039B4DE /* NSArray+Access.m in Sources */ = {isa = PBXBuildFile; fileRef = A358CABA1517E5090039B4DE /* NSArray+Access.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +50,7 @@
 		A358CA5A1517B2C20039B4DE /* Document.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Document.h; sourceTree = "<group>"; };
 		A358CA5B1517B2C20039B4DE /* Document.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Document.m; sourceTree = "<group>"; };
 		A358CA5D1517B2C20039B4DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		A358CA5F1517B2C20039B4DE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Document.xib; sourceTree = "<group>"; };
+		A358CA5F1517B2C20039B4DE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/WindowController.xib; sourceTree = "<group>"; };
 		A358CA611517B2C20039B4DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A358CA631517B2C20039B4DE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		A358CA641517B2C20039B4DE /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -60,6 +62,8 @@
 		A358CA7A1517B2E80039B4DE /* TranslationMateTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TranslationMateTests.m; sourceTree = "<group>"; };
 		A358CA7E1517B2F60039B4DE /* TranslationMate-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TranslationMate-Info.plist"; sourceTree = "<group>"; };
 		A358CA7F1517B2F60039B4DE /* TranslationMateTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TranslationMateTests-Info.plist"; sourceTree = "<group>"; };
+		A358CAB91517E5090039B4DE /* NSArray+Access.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Access.h"; sourceTree = "<group>"; };
+		A358CABA1517E5090039B4DE /* NSArray+Access.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Access.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +124,7 @@
 			children = (
 				A358CA831517B44F0039B4DE /* controllers */,
 				A358CA811517B4420039B4DE /* nibs */,
+				A358CA971517E49C0039B4DE /* helpers */,
 				A358CA801517B3470039B4DE /* others */,
 			);
 			path = src;
@@ -158,7 +163,7 @@
 		A358CA811517B4420039B4DE /* nibs */ = {
 			isa = PBXGroup;
 			children = (
-				A358CA5E1517B2C20039B4DE /* Document.xib */,
+				A358CA5E1517B2C20039B4DE /* WindowController.xib */,
 				A358CA621517B2C20039B4DE /* MainMenu.xib */,
 			);
 			name = nibs;
@@ -173,6 +178,15 @@
 				A358CA671517B2C20039B4DE /* WindowController.m */,
 			);
 			name = controllers;
+			sourceTree = "<group>";
+		};
+		A358CA971517E49C0039B4DE /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A358CAB91517E5090039B4DE /* NSArray+Access.h */,
+				A358CABA1517E5090039B4DE /* NSArray+Access.m */,
+			);
+			name = helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,7 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A358CA6A1517B2C20039B4DE /* Credits.rtf in Resources */,
-				A358CA6C1517B2C20039B4DE /* Document.xib in Resources */,
+				A358CA6C1517B2C20039B4DE /* WindowController.xib in Resources */,
 				A358CA6E1517B2C20039B4DE /* InfoPlist.strings in Resources */,
 				A358CA701517B2C20039B4DE /* MainMenu.xib in Resources */,
 			);
@@ -257,7 +271,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A358CA6D1517B2C20039B4DE /* Document.xib in Resources */,
+				A358CA6D1517B2C20039B4DE /* WindowController.xib in Resources */,
 				A358CA711517B2C20039B4DE /* MainMenu.xib in Resources */,
 				A358CA7B1517B2E80039B4DE /* InfoPlist.strings in Resources */,
 				A358CA921517B65A0039B4DE /* InfoPlist.strings in Resources */,
@@ -290,6 +304,7 @@
 				A358CA681517B2C20039B4DE /* Document.m in Sources */,
 				A358CA721517B2C20039B4DE /* main.m in Sources */,
 				A358CA741517B2C20039B4DE /* WindowController.m in Sources */,
+				A358CABB1517E5090039B4DE /* NSArray+Access.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +316,7 @@
 				A358CA731517B2C20039B4DE /* main.m in Sources */,
 				A358CA751517B2C20039B4DE /* WindowController.m in Sources */,
 				A358CA7C1517B2E80039B4DE /* TranslationMateTests.m in Sources */,
+				A358CABC1517E5090039B4DE /* NSArray+Access.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,12 +339,12 @@
 			name = Credits.rtf;
 			sourceTree = "<group>";
 		};
-		A358CA5E1517B2C20039B4DE /* Document.xib */ = {
+		A358CA5E1517B2C20039B4DE /* WindowController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				A358CA5F1517B2C20039B4DE /* en */,
 			);
-			name = Document.xib;
+			name = WindowController.xib;
 			sourceTree = "<group>";
 		};
 		A358CA601517B2C20039B4DE /* InfoPlist.strings */ = {

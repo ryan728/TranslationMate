@@ -7,12 +7,33 @@
 //
 
 #import "WindowController.h"
+#import "Document.h"
 
 @implementation WindowController
 
-- (void)setDocument:(NSDocument *)document
+@synthesize enTextView = enTextView_;
+
+- (id)init
 {
-//TODO: override here for "Windows Are Restored Automatically"
+  self = [super initWithWindowNibName:@"WindowController"];
+  if (self) {
+
+  }
+
+  return self;
+}
+
+//- (void)setDocument:(NSDocument *)document
+//{
+////TODO: override here for "Windows Are Restored Automatically"
+//}
+
+- (void)windowDidLoad
+{
+  [enTextView_ setTextColor:[NSColor darkGrayColor]];
+  [enTextView_ setTextContainerInset:NSMakeSize(10, 10)];
+  [enTextView_ setFont:[NSFont systemFontOfSize:16]];
+  [enTextView_ setString:[[(Document *)[self document] text] string]];
 }
 
 @end

@@ -8,34 +8,20 @@
 
 #import "Document.h"
 #import "WindowController.h"
+#import "NSArray+Access.h"
 
 @implementation Document
 
-- (id)init
+@synthesize text;
+
+- (void)makeWindowControllers
 {
-  self = [super init];
-  if (self) {
-    // Add your subclass-specific initialization here.
-  }
-  return self;
+  [self addWindowController:[[WindowController alloc] init]];
 }
 
-- (NSString *)windowNibName
+- (WindowController *)windowController
 {
-  // Override returning the nib file name of the document
-  // If you need to use a subclass of NSWindowController or if your document supports multiple NSWindowControllers, you should remove this method and override -makeWindowControllers instead.
-  return @"Document";
-}
-
-//- (void)makeWindowControllers
-//{
-//  [self addWindowController:[[WindowController alloc] init]];
-//}
-
-- (void)windowControllerDidLoadNib:(NSWindowController *)aController
-{
-  [super windowControllerDidLoadNib:aController];
-  // Add any code here that needs to be executed once the windowController has loaded the document's window.
+  return [[self windowControllers] first];
 }
 
 + (BOOL)autosavesInPlace
@@ -60,16 +46,15 @@
 
 - (BOOL)readFromData:(NSData *)data ofType:(NSString *)typeName error:(NSError **)outError
 {
-//  BOOL readSuccess = NO;
-//  NSAttributedString *fileContents = [[NSAttributedString alloc]
-//                                      initWithData:data options:nil documentAttributes:nil
-//                                      error:outError];
-//  if (fileContents) {
-//    readSuccess = YES;
-//    [self setText:fileContents];
-//  }
-//  return readSuccess;
+  BOOL readSuccess = NO;
+  NSAttributedString *fileContents = [[NSAttributedString alloc]
+                                      initWithData:data options:nil documentAttributes:nil
+                                      error:outError];
+  if (fileContents) {
+    readSuccess = YES;
+    [self setText:fileContents];
+  }
+  return readSuccess;
   return NO;
 }
-
 @end

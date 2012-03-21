@@ -10,4 +10,6 @@
 
 @interface WindowController : NSWindowController
 
+@property (strong) IBOutlet NSTextView *enTextView;
+
 @end

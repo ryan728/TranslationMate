@@ -1,8 +1,8 @@
-- open xml file
+TODO:
 - modify xml file
 - save xml file back
 
-- polish typography, very basic version
+- polish typography, maybe also need very basic ui
 
 - open en, zh two xml files at the same time
 - horizontally (maybe you want vertically first?) show two views
@@ -22,3 +22,10 @@
 - autosave (should be easy)
 
 - undo/redo (maybe cheap)
+
+DOING:
+
+
+DONE:
+
+- open xml file
