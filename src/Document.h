@@ -10,6 +10,6 @@
 
 @interface Document : NSDocument
 
-@property (nonatomic, strong) NSAttributedString* text;
+@property (nonatomic, readonly) NSAttributedString* text;
 
 @end

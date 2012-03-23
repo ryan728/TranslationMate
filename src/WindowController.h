@@ -10,6 +10,6 @@
 
 @interface WindowController : NSWindowController
 
-@property (strong) IBOutlet NSTextView *enTextView;
+@property (nonatomic, strong) IBOutlet NSTextView *enTextView;
 
 @end

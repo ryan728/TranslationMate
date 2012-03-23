@@ -10,9 +10,17 @@
 #import "WindowController.h"
 #import "NSArray+Access.h"
 
+@interface Document ()
+
+@property (nonatomic, readonly) NSTextView *textView;
+
+@end
+
 @implementation Document
 
-@synthesize text;
+@dynamic textView;
+
+@synthesize text = text_;
 
 - (void)makeWindowControllers
 {
@@ -24,6 +32,11 @@
   return [[self windowControllers] first];
 }
 
+- (NSTextView *)textView
+{
+  return [[self windowController] enTextView];
+}
+
 + (BOOL)autosavesInPlace
 {
   return YES;
@@ -31,17 +44,17 @@
 
 - (NSData *)dataOfType:(NSString *)typeName error:(NSError **)outError
 {
-//  [textView breakUndoCoalescing];
-//  NSData *data = [textView dataFromRange:NSMakeRange(0,
-//                                                     [[textView textStorage] length])
-//                      documentAttributes:nil
-//                                   error:outError];
-//  if (!data && outError) {
-//    *outError = [NSError errorWithDomain:NSCocoaErrorDomain
-//                                    code:NSFileWriteUnknownError userInfo:nil];
-//  }
-//  return data;
-  return nil;
+  [self.textView breakUndoCoalescing];
+  NSData *data = [self.textView.attributedString dataFromRange:NSMakeRange(0,
+                                                                           [[self.textView textStorage] length])
+                                            documentAttributes:[NSDictionary dictionaryWithObjectsAndKeys:NSPlainTextDocumentType, NSDocumentTypeDocumentAttribute, nil]
+                  
+                                   error:outError];
+  if (!data && outError) {
+    *outError = [NSError errorWithDomain:NSCocoaErrorDomain
+                                    code:NSFileWriteUnknownError userInfo:nil];
+  }
+  return data;
 }
 
 - (BOOL)readFromData:(NSData *)data ofType:(NSString *)typeName error:(NSError **)outError
@@ -52,7 +65,7 @@
                                       error:outError];
   if (fileContents) {
     readSuccess = YES;
-    [self setText:fileContents];
+    text_ = fileContents;
   }
   return readSuccess;
   return NO;

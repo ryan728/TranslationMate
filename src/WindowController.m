@@ -33,7 +33,7 @@
   [enTextView_ setTextColor:[NSColor darkGrayColor]];
   [enTextView_ setTextContainerInset:NSMakeSize(10, 10)];
   [enTextView_ setFont:[NSFont systemFontOfSize:16]];
-  [enTextView_ setString:[[(Document *)[self document] text] string]];
+  [enTextView_ setString:[[[self document] text] string]];
 }
 
 @end
