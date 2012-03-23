@@ -65,6 +65,7 @@
                                       error:outError];
   if (fileContents) {
     readSuccess = YES;
+    //why we set text instead of set textview.string directly, is because at this stage, windowControllers has not been init yet.
     text_ = fileContents;
   }
   return readSuccess;
